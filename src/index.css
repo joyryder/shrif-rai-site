@@ -1,3 +1,79 @@
+
+
+@font-face {
+  font-family: 'Nothing';
+  font-weight: lighter;
+  src: local('Nothing'), url(./fonts/Nothing_NdroidOs_led.ttf) format('truetype');
+}
+
+
+* {
+  padding: 0px 10px;
+  margin: 0px;  
+  color: whitesmoke;
+  background-color: black;
+  font-family: Nothing;
+}
+
+.navbar {
+  padding: 20px 100px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.navbar .nav {
+  margin-left: auto;
+}
+
+.navbar h4{
+  display: inline-block;
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+
+.navbar h4:hover{
+  color:  #0ae942 ;
+  cursor: pointer;
+}
+
+.about{
+  display: flex;
+  padding: 0px 100px;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.social{
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  width: 60px;
+  bottom: 50px;
+  padding: 0px;
+}
+
+
+.social a{  
+  text-decoration: none;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.social a:hover .icon{
+  stroke: #0ae942;
+}
+
+.aboutcontent h2{
+  margin-bottom: 30px;
+}
+.aboutcontent h1{
+  font-size: 60px;
+  margin: 10px 0px;
+
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
