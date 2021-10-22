@@ -6,6 +6,7 @@ const Social = () => {
         <div className='social'>
             <a target="_blank" rel="noopener noreferrer" href='https://github.com/joyryder'><GithubIcon/></a>
             <a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/shrif-rai'><LinkedinIcon/></a>
+            <div class="dividerVertical"></div>
         </div>
     )
 }
