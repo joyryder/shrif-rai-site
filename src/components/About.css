@@ -1,0 +1,43 @@
+
+.aboutcontent {
+    padding: 100px 0px;
+    margin: 0px auto;
+    display:flex;
+    flex-direction:row;
+  }
+  
+  .aboutcontent img{
+    margin-top: 2%;
+    height: 60%;
+    width: 60%;
+    margin-left: 5%;
+    width: 280px; height: 280px; 
+    object-fit: cover;
+    filter: grayscale(100%);
+  }
+  
+  .aboutcontent img:hover{
+    filter: grayscale(0%);
+  }
+  
+  .titlecontent {
+    width: 500px;
+  }
+  .abouttitle{
+    display: flex;
+    flex-grow:1;
+  }
+  
+  
+  .divider{
+    margin-left: 10px;
+    margin-top: 10px;
+    height: 2px;
+    flex: 1;
+    background-color: black;
+    border-top: 2px dotted white;
+  }
+  
+  .spacer{
+    height: 100vh;
+  }

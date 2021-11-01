@@ -1,12 +1,23 @@
 import mypic from '../content/images/portrait.jpeg'
+import './About.css'
+import { motion } from 'framer-motion'
 
 const About = () => {
     return(
         <div className='about'>
             <div className='greeting'>
-                <h2> Hi, my name is</h2>
-                <h1> Shrif Rai.</h1>
-                <h1>I like making cool software.</h1>
+                <motion.h2 
+                initial={{opacity: 0, y:-100}} 
+                animate={{opacity: 1, y: 0}}
+                transition={{type: 'tween', delay: .2, duration: .5}}> Hi, my name is</motion.h2>
+                <motion.h1 
+                initial={{opacity: 0}} 
+                animate={{opacity: 1}}
+                transition={{delay: .4}}> Shrif Rai.</motion.h1>
+                <motion.h1 
+                initial={{opacity: 0}} 
+                animate={{opacity: 1}}
+                transition={{delay: .6}}>I like making cool software.</motion.h1>
             </div>
             <div className='aboutcontent' id='aboutcontent'>
                 <div className='titlecontent'>
@@ -23,6 +34,7 @@ const About = () => {
                     <br/>
                 </div>
                 <img src={mypic} alt='mypic'/>
+                <div class="spacer"></div>
             </div>
         </div>
     )
